@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Technology Usage Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill out this form</p>
+    </header>
+    <form id="survey-form">
+
+        <fieldset>
+            <h2>Personal Information</h2>
+
+            <label class="details-label" id="name-label" for="name">Enter your full name</label>
+            <input class="details-text-input" id="name" type="text" placeholder="Enter Full Name" required>
+            
+            <label class="details-label" id="email-label" for="email">E-mail</label>
+            <input class="details-text-input" id="email" type="email" placeholder="Enter valid email address" required>
+            
+            <label class="details-label" id="number-label" for="number">Age</label>
+            <input class="details-text-input" id="number" type="number" min="16" max="80" placeholder="Enter age between 10 and 80 years">
+
+            <p class="details-label">Select your gender</p>
+            <input class="details-radio-input" type="radio" name="gender" id="male" value="male"><label for="male" >male</label>
+            <input class="details-radio-input" type="radio" name="gender" id="female" value="female"><label for="female" >female</label>
+            <input class="details-radio-input" type="radio" name="gender" id="Non-binary" value="Non-Binary"> <label for="Non-binary">Non-Binary</label>
+            <input class="details-radio-input" type="radio" name="gender" id="Undisclosed" value="Prefer not to say"><label for="Undisclosed">Prefer not to say</label>
+            
+            <label class="details-label" for="dropdown">Education</label><select name="gender" id="dropdown">
+                <option value="" disabled selected>--Select highest level of education--</option>
+                <option value="High School and below">High School and below</option>
+                <option value="Pre-University College">Pre-University College</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Doctorate">Doctorate</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <h2>Technology Devices</h2>
+            <p>Please check all the devices you own or regularly use</p>
+            <input type="checkbox" name="device" id="Smartphone" value="Smartphone">
+            <label for="Smartphone">Smartphone</label><br>
+
+            <input type="checkbox" name="device" id="Tablet" value="Tablet">
+            <label for="Tablet">Tablet</label>
+            
+            <input type="checkbox" name="device" id="Laptop" value="Laptop">
+            <label for="Laptop">Laptop</label>
+            
+            <input type="checkbox" name="device" id="Desktop computer" value="Desktop computer">
+            <label for="Desktop computer">Desktop computer</label>
+            
+            <input type="checkbox" name="device" id="Smartwatch" value="Smartwatch">
+            <label for="Smartwatch">Smartwatch</label>
+            
+            <input type="checkbox" name="device" id="Fitness tracker" value="Fitness tracker">
+            <label for="Fitness tracker">Fitness tracker</label>
+            
+            <input type="checkbox" name="device" id="Smart home devices" value="Smart home devices">
+            <label for="Smart home devices">Smart home devices</label>
+            
+            <input type="checkbox" name="device" id="Gaming console" value="Gaming console">
+            <label for="Gaming console">Gaming console</label>
+
+            <input type="checkbox" name="use" id="other" value="Other">
+            <label for="other">Other (please specify):</label>
+            <input type="text" id="other-text" name="other-device">
+        </fieldset>
+
+        <fieldset>
+            <h2>Internet Usage</h2>
+            <p>How often do you access the internet?</p>
+            <input type="radio" name="usageFrequency" id="Multiple" value="Multiple Times in a day">
+            <label for="Multiple">Multiple Times in a day</label>
+
+            <input type="radio" name="usageFrequency" id="daily" value="Daily">
+            <label for="daily">Daily</label>
+
+            <input type="radio" name="usageFrequency" id="weekly" value="Few times in a week">
+            <label for="weekly">Few times in a week</label>
+
+            <input type="radio" name="usageFrequency" id="rarely" value="Rarely">
+            <label for="rarely">Rarely</label>
+
+            <input type="radio" name="usageFrequency" id="never" value="Never">
+            <label for="never">Never</label>
+
+            <p>What do you primarily use the internet for? (Select all that apply)</p>
+            <input type="checkbox" name="use" id="media" value="Social Media">
+            <label for="media">Social Media</label>
+
+            <input type="checkbox" name="use" id="shopping" value="Shopping">
+            <label for="shopping">Shopping</label>
+
+            <input type="checkbox" name="use" id="streaming" value="Streaming movies/videos">
+            <label for="streaming">Streaming movies/videos</label>
+
+            <input type="checkbox" name="use" id="gaming" value="Gaming">
+            <label for="gaming">Gaming</label>
+
+            <input type="checkbox" name="use" id="research" value="Research/Studies">
+            <label for="research">Research/Studies</label>
+
+            <input type="checkbox" name="use" id="work" value="Work">
+            <label for="work">Work</label>
+
+            <input type="checkbox" name="use" id="other" value="Other">
+            <label for="other">Other (please specify):</label>
+            <input type="text" id="other-text" name="other-use">
+        </fieldset>
+
+        <fieldset>
+            <h2>Answer The Following</h2>
+
+            <label for="question1">What emerging technology are you most excited about?</label>
+            <textarea name="question1" id="question1"  placeholder="Enter you answer here..."></textarea>
+
+            <label for="question2">Do you have any concerns about the impact of technology on society or personal privacy? Please explain.</label>
+            <textarea name="question2" id="question2"  placeholder="Enter you answer here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <h2>Additional Comments</h2>
+            <textarea name="Comments" placeholder="Enter your comments..."></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit">
+
+    </form>
+</body>
+</html>
