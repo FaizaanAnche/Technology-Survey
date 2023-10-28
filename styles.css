@@ -1,14 +1,17 @@
-/* h1{
-   text-align: center;
-}
-
-#description{
-    text-align: center;
-}
 
 #survey-form{
     max-width: 800px;
     margin: auto;
+    background-color: #C2D9FF;
+    color: #190482;
+} 
+
+#submit{
+    
+}
+
+.details{
+    margin-bottom: 10px;
 }
 
 .details-label{
@@ -21,5 +24,23 @@
 .details-text-input{
        margin: auto;
     min-width: 100%;
-} */
+}
 
+body{
+    background-color: #190482;
+}
+
+fieldset{
+    border: 0;
+}
+
+textarea{
+    display: block;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.submit{
+    padding: 12px;
+}
