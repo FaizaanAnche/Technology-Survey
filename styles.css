@@ -4,6 +4,7 @@
     margin: auto;
     background-color: #C2D9FF;
     color: #190482;
+    border-radius: 10px;
 } 
 
 .details{
@@ -44,6 +45,8 @@ textarea{
 header{
     background-color: #C2D9FF ;
     width: 800px;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
